@@ -1,85 +1,90 @@
 /* Reset de CSS*/
 * {
-  margin: 0;
-  padding: 0;
-  /* A medida do tamanho da caixa vem da borda */
-  box-sizing: border-box;
-  padding-top: 40px;
-}
-
-/*Define variáveis globais (modo padrão = dia)*/
-:root {
-  --circle-bg: linear-gradient(
-    180deg,
-    rgb(255, 115, 0) 0%,
-    rgba(255, 166, 0, 0.986) 35%,
-    rgba(255, 187, 51, 0.9) 70%,
-    rgba(255, 217, 59, 0.8) 100%
-  );
-  --circle-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
-    0 0 30px rgba(255, 140, 0, 0.4);
-  --day-color-bg: linear-gradient(to right, #83a4d4, #b6fbff);
-  --sun-color: #f2ef88;
-}
-
-body {
-  background: var(--day-color-bg);
-}
-
-.circle {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: var(--circle-bg);
-  border: none;
-  overflow: hidden;
-  margin: 0 auto 10px auto;
-  box-shadow: var(--circle-shadow);
-}
-
-/* Sobrescreve / transição as variáveis para o tema noite */
-.circle:hover {
-  /* --circle-bg: linear-gradient(to right, #005c97, #363795); */
-  /* --circle-bg:  linear-gradient(to bottom, #3498db, #2c3e50); */
-  --circle-bg: linear-gradient(to bottom, #000046, #1cb5e0);
-  --circle-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
-    0 0 30px rgba(17, 59, 94, 0.4);
-  --moon-color: radial-gradient(
-    circle,
-    rgba(222, 213, 228, 0.887) 4%,
-    rgb(248, 246, 246) 100%
-  );
-}
-
-.sun {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-  background: var(--sun-color);
-  position: absolute;
-  top: 100px;
-  left: 160px;
-  transition: opacity 0.1s ease;
-
-  box-shadow: 0 0 70px 10px #ffe600, 0 0 70px 20px #f0f34b,
-    0 0 70px 30px #ffdb78dc;
-}
-
-.circle:hover .sun {
-  opacity: 0;
-  transform: scale(0.8);
-  filter: blur(5px);
-}
-
-.circle:hover .moon {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-  background: var(--moon-color);
-  position: absolute;
-  top: 100px;
-  left: 160px;
-  box-shadow: 0 0 70px 10px #e5e0ff, 0 0 70px 20px #bbb4e9,
-    0 0 70px 30px #889ef7;
-}
+    margin: 0;
+    padding: 0;
+    /* A medida do tamanho da caixa vem da borda */
+    box-sizing: border-box;
+    padding-top: 40px;
+  }
+  
+  /*Define variáveis globais (modo padrão = dia)*/
+  :root {
+    --circle-bg: linear-gradient(
+      180deg,
+      rgb(255, 115, 0) 0%,
+      rgba(255, 166, 0, 0.986) 35%,
+      rgba(255, 187, 51, 0.9) 70%,
+      rgba(255, 217, 59, 0.8) 100%
+    );
+    --circle-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
+      0 0 30px rgba(255, 140, 0, 0.4);
+    
+    --sun-color: #f2ef88;
+  }
+  
+  .elem {
+    background-color: rgb(241, 239, 200);
+    width: 100%;
+    height: 100vh;
+  }
+  .elem:hover {
+    background-color:#3179ff
+  }
+  
+  .circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: var(--circle-bg);
+    border: none;
+    overflow: hidden;
+    margin: 0 auto 10px auto;
+    box-shadow: var(--circle-shadow);
+  }
+  
+  /* Sobrescreve / transição as variáveis para o tema noite */
+  .circle:hover {
+    /* --circle-bg: linear-gradient(to right, #005c97, #363795); */
+    /* --circle-bg:  linear-gradient(to bottom, #3498db, #2c3e50); */
+    --circle-bg: linear-gradient(to bottom, #000046, #1cb5e0);
+    --circle-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
+      0 0 30px rgba(17, 59, 94, 0.4);
+    --moon-color: radial-gradient(
+      circle,
+      rgba(222, 213, 228, 0.887) 4%,
+      rgb(248, 246, 246) 100%
+    );
+  }
+  
+  .sun {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: var(--sun-color);
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    transition: opacity 0.1s ease;
+  
+    box-shadow: 0 0 70px 10px #ffe600, 0 0 70px 20px #f0f34b,
+      0 0 70px 30px #ffdb78dc;
+  }
+  
+  .circle:hover .sun {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(5px);
+  }
+  
+  .circle:hover .moon {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: var(--moon-color);
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    box-shadow: 0 0 70px 10px #e5e0ff, 0 0 70px 20px #bbb4e9,
+      0 0 70px 30px #889ef7;
+  }
