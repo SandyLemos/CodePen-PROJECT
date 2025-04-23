@@ -88,3 +88,56 @@
     box-shadow: 0 0 70px 10px #e5e0ff, 0 0 70px 20px #bbb4e9,
       0 0 70px 30px #889ef7;
   }
+ 
+  .ocean {
+  position: absolute;
+  background: repeating-radial-gradient(ellipse farthest-corner at center -400%, #4cb4f0 30%, #4cb4f0 90%) repeat scroll 0 0 #518eac;
+  width: 100%;
+  height: 200px;
+  top: 68%;
+  }
+
+
+  .wave {
+  
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 30%;
+  transform: translateX(0px);
+  }
+
+  
+   
+/*Animacao*/
+.wave {
+  animation: moveWave 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(12px, 0, 0);
+  }
+}
+
+.stars{ 
+  position: absolute;
+  bottom: 40%;
+  right: 10%;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
