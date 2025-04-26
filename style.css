@@ -232,16 +232,17 @@ circle:hover .sun {
 /* ocean & waves */
 .ocean {
   position: relative;
-  background: #7fe0ec;
   background: repeating-radial-gradient(
       ellipse farthest-corner at center -400%,
       #43818a 30%,
       #7fe0ec 90%
     )
     repeat scroll 0 0 #7fe0ec;
+  fill-opacity: 0.9;
   width: 100%;
   height: 200px;
   top: 68%;
+  overflow: hidden;
 }
 
 .waves {
@@ -249,7 +250,8 @@ circle:hover .sun {
   position: absolute;
   width: 110%;
   height: 200%;
-  transform: translateX(0px);
+  transform: scaleX(1.1);
+  transform-origin: center top;
 }
 
 .wave-1 {
@@ -259,10 +261,10 @@ circle:hover .sun {
 
 @keyframes moveWave1 {
   0% {
-    transform: translate3d(-90px, 0, 0);
+    transform: translateX(0) scaleX(1.5);
   }
   100% {
-    transform: translate3d(12px, 0, 0);
+    transform: translatex(-50%) scaleX(1.5);
   }
 }
 
@@ -273,10 +275,10 @@ circle:hover .sun {
 
 @keyframes moveWave2 {
   0% {
-    transform: translate3d(-90px, 0, 0);
+    transform: translateX(0) scaleX(1.5);
   }
   100% {
-    transform: translate3d(12px, 0, 0);
+    transform: translatex(-50%) scaleX(1.5);
   }
 }
 .wave-3 {
@@ -286,10 +288,10 @@ circle:hover .sun {
 
 @keyframes moveWave3 {
   0% {
-    transform: translate3d(-90px, 0, 0);
+    transform: translateX(0) scaleX(1.5);
   }
   100% {
-    transform: translate3d(12px, 0, 0);
+    transform: translatex(-50%) scaleX(1.5);
   }
 }
 
