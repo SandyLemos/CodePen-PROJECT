@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <input type="checkbox" id="checkbox" hidden />
     <div class="elem">
       <!-- Container dedicado para o céu/círculo -->
       <div class="sky-container">
@@ -64,16 +65,27 @@
         </div>
       </div>
 
-      <div class="switch">
-        <label for="toggle-theme">
-          <input type="checkbox" id="toggle-theme" class="hidden-checkbox" />
-          <span>
-            <ion-icon class="icon-sun" name="sunny"></ion-icon>
-            <ion-icon class="icon-moon" name="moon"></ion-icon>
-          </span>
+      <div class="switch-container">
+        <label for="checkbox">
+          <div class="panel"></div>
+
+          <div class="light-theme">
+            <div class="icon-sun"></div>
+            <div class="icon-clouds">
+              <span class="icon-cloud1"></span>
+              <span class="icon-cloud2"></span>
+              <span class="icon-cloud3"></span>
+            </div>
+          </div>
+
+          <div class="dark-theme">
+            <div class="icon-moon"></div>
+            <span class="icon-star1"></span>
+            <span class="icon-star2"></span>
+            <span class="icon-star3"></span>
+          </div>
         </label>
       </div>
     </div>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
