@@ -68,10 +68,6 @@ body {
   overflow: hidden;
 }
 
-.circle:hover {
-  background: linear-gradient(to bottom, #000046, #1cb5e0);
-}
-
 .sun,
 .moon {
   width: 20%;
@@ -95,16 +91,6 @@ body {
   box-shadow: 0 0 70px 10px #e5e0ff, 0 0 70px 20px #bbb4e9,
     0 0 70px 30px #889ef7;
   opacity: 0;
-}
-
-circle:hover .sun {
-  opacity: 0;
-  transform: scale(0.8);
-  filter: blur(5px);
-}
-
-.circle:hover .moon {
-  opacity: 1;
 }
 
 /* Crater */
@@ -137,7 +123,6 @@ circle:hover .sun {
   top: 20px;
 }
 
-
 /* Stars */
 .stars div {
   position: absolute;
@@ -145,14 +130,6 @@ circle:hover .sun {
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.5s ease;
-}
-
-.hidden-checkbox:checked ~ .elem .stars div {
-  opacity: 1;
-}
-
-.circle:hover .stars div {
-  opacity: 1;
 }
 
 /* Static position stars */
@@ -214,10 +191,6 @@ circle:hover .sun {
   animation: twinkle 3s infinite;
   opacity: 0;
   transition: opacity 0.5s ease;
-}
-
-.circle:hover .star {
-  opacity: 1;
 }
 
 .star1 {
@@ -431,6 +404,7 @@ label {
   background-color: #fff;
   border-radius: 100px;
 }
+
 .icon-cloud2 {
   position: absolute;
   bottom: 6px;
