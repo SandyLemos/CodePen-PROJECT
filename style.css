@@ -30,12 +30,10 @@ body {
     rgba(222, 213, 228, 0.887) 4%,
     rgb(248, 246, 246) 100%
   );
+  --crat-shadow: inset 1px 4px 5px 1px rgb(185, 173, 185);
+  --crat-border: 2px solid rgb(216, 205, 219);
   --page-bg-day: rgb(241, 239, 200);
   --page-bg-night: #0a0a2a;
-  --ocean-day: #4cb4f0;
-  --ocean-night: #1a3a6a;
-  --wave-day: #3a9bdc;
-  --wave-night: #0f2a5a;
 }
 
 .elem {
@@ -108,6 +106,37 @@ circle:hover .sun {
 .circle:hover .moon {
   opacity: 1;
 }
+
+/* Crater */
+.moon .crat {
+  position: absolute;
+  content: "";
+  box-shadow: var(--crat-shadow);
+  border: var(--crat-border);
+  border-radius: 100px;
+}
+
+.crat1 {
+  width: 15px;
+  height: 15px;
+  left: 20px;
+  top: 20px;
+}
+
+.crat2 {
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 45px;
+}
+
+.crat3 {
+  width: 30px;
+  height: 30px;
+  left: 48px;
+  top: 20px;
+}
+
 
 /* Stars */
 .stars div {
@@ -229,12 +258,46 @@ circle:hover .sun {
   }
 }
 
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, #ffcd5c, transparent);
+  transform: rotate(-20deg);
+  transform-origin: left;
+  filter: blur(1px);
+  opacity: 0;
+  z-index: 1;
+  top: 15%;
+  left: 100%;
+}
+
+/* Mostrar apenas à noite */
+#checkbox:checked ~ .elem .shooting-star {
+  opacity: 1;
+  animation: shooting-star 3s ease-in infinite;
+  animation-delay: 2.5s;
+}
+
+@keyframes shooting-star {
+  0% {
+    opacity: 0;
+    left: 100%;
+    top: 15%; /* start position high */
+  }
+  100% {
+    opacity: 1;
+    left: -100px;
+    top: 50%; /* final position low*/
+  }
+}
+
 /* ocean & waves */
 .ocean {
   position: relative;
   background: repeating-radial-gradient(
       ellipse farthest-corner at center -400%,
-      #43818a 30%,
+      #43818a 10%,
       #7fe0ec 90%
     )
     repeat scroll 0 0 #7fe0ec;
@@ -251,7 +314,7 @@ circle:hover .sun {
   width: 110%;
   height: 200%;
   transform: scaleX(1.1);
-  transform-origin: center top;
+  transform-origin: center;
 }
 
 .wave-1 {
@@ -445,8 +508,8 @@ label {
   content: "";
   width: 6px;
   height: 6px;
-  box-shadow: inset 1px 4px 5px 1px rgb(185, 173, 185);
-  border: 2px solid rgb(216, 205, 219);
+  box-shadow: var(--crat-shadow);
+  border: var(--crat-border);
   border-radius: 100px;
   left: 10px;
   top: 10px;
@@ -457,8 +520,8 @@ label {
   content: "";
   width: 10px;
   height: 10px;
-  box-shadow: inset 1px 4px 5px 1px rgb(185, 173, 185);
-  border: 2px solid rgb(216, 205, 219);
+  box-shadow: var(--crat-shadow);
+  border: var(--crat-border);
   border-radius: 100px;
   left: 20px;
   top: 20px;
