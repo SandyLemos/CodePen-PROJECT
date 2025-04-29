@@ -86,6 +86,313 @@ body {
   opacity: 1;
 }
 
+.cloud-container {
+  position: absolute;
+  top: 150px;
+  left: 60px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.cloud1 {
+  position: absolute;
+  bottom: 25px;
+  left: 32px;
+  width: 25px;
+  height: 25px;
+  background-color: #f0f8ff;
+  border-radius: 100px;
+}
+
+.cloud1::before {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.cloud1::after {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f8ff;
+  border-radius: 100px;
+}
+
+.cloud2 {
+  position: absolute;
+  bottom: 20px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  background-color: #f0f8ff;
+  border-radius: 100px;
+}
+
+.cloud2::before {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.cloud2::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: -15px;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f8ff;
+  border-radius: 100px;
+}
+
+.cloud3 {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.cloud3::after {
+  position: absolute;
+  content: "";
+  bottom: 8px;
+  left: 40px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.cloud-container2 {
+  position: absolute;
+  top: 180px;
+  left: 210px;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.clouds1 {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  background-color: #e0ffff;
+  border-radius: 100px;
+}
+
+.clouds1::before {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 45px;
+  width: 25px;
+  height: 25px;
+  background-color: #d6f5ff;
+  border-radius: 100px;
+}
+
+.clouds1::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #e0ffff;
+  border-radius: 100px;
+}
+
+.clouds2 {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  width: 35px;
+  height: 35px;
+  background-color: #d6f5ff;
+  border-radius: 100px;
+}
+
+.clouds2::before {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #d6f5ff;
+  border-radius: 100px;
+}
+
+.clouds2::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 40px;
+  width: 25px;
+  height: 25px;
+  background-color: #d6f5ff;
+  border-radius: 100px;
+}
+
+.clouds3 {
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  background-color: #e0ffff;
+  border-radius: 100px;
+}
+
+.clouds3::before {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  background-color: #d6f5ff;
+  border-radius: 100px;
+}
+
+.cloud-container3 {
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  left: 158px;
+  top: 10px;
+  opacity: 1;
+}
+
+.clouds-1 {
+  position: absolute;
+  bottom: 6px;
+  left: -20px;
+  width: 35px;
+  height: 35px;
+  background-color: #F5F5F5;
+  border-radius: 100px;
+}
+
+.clouds-1::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #E6ECF0;
+  border-radius: 100px;
+}
+
+.clouds-1::after {
+  position: absolute;
+  content: "";
+  bottom: 18px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  background-color: #F0F8FF;
+  border-radius: 100px;
+}
+
+.clouds-2 {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #E6ECF0;
+  border-radius: 100px;
+}
+
+.clouds-2::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: #E6ECF0;
+  border-radius: 100px;
+}
+
+.clouds-2::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 65px;
+  width: 25px;
+  height: 25px;
+  background-color: #E6ECF0;
+  border-radius: 100px;
+}
+
+.clouds-3 {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  width: 35px;
+  height: 35px;
+  background-color: #F0F8FF;
+  border-radius: 100px;
+}
+
+.clouds-4 {
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+  width: 35px;
+  height: 35px;
+  background-color: #E6ECF0;
+  border-radius: 100px;
+}
+
+.clouds-4::before {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #E6ECF0;
+  border-radius: 100px;
+}
+
+.clouds-4:after {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #F0F8FF;
+  border-radius: 100px;
+}
+
+#checkbox:checked ~ .elem .cloud-container,
+#checkbox:checked ~ .elem .cloud-container2,
+#checkbox:checked ~ .elem .cloud-container3 {
+  opacity: 0;
+}
+
 .bird {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
   background-size: auto 100%;
@@ -309,7 +616,7 @@ body {
   left: 100%;
 }
 
-/* Mostrar apenas à noite */
+/* Only Night */
 #checkbox:checked ~ .elem .shooting-star {
   opacity: 1;
   animation: shooting-star 3s ease-in infinite;
@@ -465,7 +772,7 @@ label {
   left: 3px;
   width: 30px;
   height: 30px;
-  background-color: #fff;
+  background-color: #E6ECF0;
   border-radius: 100px;
 }
 
@@ -475,7 +782,7 @@ label {
   left: 15px;
   width: 40px;
   height: 35px;
-  background-color: #fff;
+  background-color: #F0F8FF;
   border-radius: 100px;
 }
 .icon-cloud3 {
@@ -484,7 +791,7 @@ label {
   left: 35px;
   width: 30px;
   height: 30px;
-  background-color: #fff;
+  background-color: #F0F8FF;
   border-radius: 100px;
 }
 
